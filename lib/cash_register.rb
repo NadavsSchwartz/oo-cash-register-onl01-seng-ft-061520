@@ -1,6 +1,10 @@
 class CashRegister
   
+<<<<<<< HEAD
   attr_accessor :total, :discount, :price, :transaction
+=======
+  attr_accessor :total, :discount, :price
+>>>>>>> e56f3153cd1df6029221a39d8a9d46cb3aa6576c
   
   def initialize(discount = 0)
     @total = 0
@@ -16,7 +20,10 @@ class CashRegister
       @items << title
       counter -= 1
     end
+<<<<<<< HEAD
     self.transaction = price * quantity
+=======
+>>>>>>> e56f3153cd1df6029221a39d8a9d46cb3aa6576c
   end
   
   def items
@@ -32,7 +39,12 @@ class CashRegister
     end
   end
   
+<<<<<<< HEAD
   def void_last_transaction
     self.total -= self.transaction
+=======
+  def void_last_transacation
+    @total = @total.pop
+>>>>>>> e56f3153cd1df6029221a39d8a9d46cb3aa6576c
   end
 end
